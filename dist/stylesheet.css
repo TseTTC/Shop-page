@@ -1,0 +1,101 @@
+body {
+    background-image: url(images/background.png);
+    font-family: 'Zen Dots', cursive;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+#header {
+    display:grid;
+    grid-template: 1fr 1fr;
+    justify-content:center;
+
+}
+#logo {
+        text-align: center;
+
+}
+#menu {
+    display:grid;
+    grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr;
+    gap: 5px;
+    align-items:center;
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+
+
+}
+#about:hover, #product:hover, #contact:hover {
+    cursor:pointer;
+    font-size:25px;
+    margin:-5px;
+    text-decoration: underline;
+}
+.opacity {
+    background: rgba(255,255,255, 0.4)
+}
+.description{
+    font-size:30px;
+    text-align: center;
+ 
+}
+#about-tab{
+    display:grid;
+    grid-template-columns: 0.5fr 1fr;
+    height:-webkit-calc(100vh 142.875px) ;
+    height:-o-calc(100vh - 142.875px) ;
+    height:-moz-calc(100vh - 142.875px) ;
+    text-align:center;
+    display:none;
+}
+#about-left{
+    background:white;
+    height:-webkit-calc(100vh - 180px) ;
+    height:-o-calc(100vh - 180px) ;
+    height:-moz-calc(100vh - 180px) ;
+    grid-gap: 10px;
+    width:40vw;
+
+}
+#pokemon {
+    height:-webkit-calc(100vh - 180px) ;
+    height:-o-calc(100vh - 180px) ;
+    height:-moz-calc(100vh - 180px) ;
+    grid-gap: 0px;
+    object-fit:none;
+
+}
+#product-tab{
+    display:none;
+    display:fixed;
+    height:-webkit-calc(100vh - 180px) ;
+    height:-o-calc(100vh - 180px) ;
+    height:-moz-calc(100vh - 180px) ;
+}
+#product-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:20px;
+    background:grey;
+    text-align:center;
+    height:calc(100vh - 180px) ;
+    
+}
+.product{
+
+    padding:30px;  
+    max-height:-o-calc(50vh- 180px)
+
+}
+#product1,#product2,#product3, #product4,#product5,#product6{
+    height:-moz-calc(50vh - 90px) ;
+    height:-o-calc((100vh - 180px)/2) ;
+    height:-webkit-calc((100vh - 180px)/2) ;
+    
+    width: 100%;
+}
+
